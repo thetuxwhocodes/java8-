@@ -4,7 +4,7 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.Map.Entry;
 
-public class PrintSystemProperties {
+public class PrintSystemProperties { 
 
 	public static void printAllSystemProperties() {
 
