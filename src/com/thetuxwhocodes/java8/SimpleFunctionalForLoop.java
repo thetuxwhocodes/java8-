@@ -9,8 +9,8 @@ public class SimpleFunctionalForLoop {
 
         List<Integer> integers = new ArrayList<>();
 
-        //Insert the numbers 1 to 5 to the list
-        for (int i = 0; i < 5; i++) {
+        //Insert the numbers 1 to 10 to the list
+        for (int i = 0; i < 10; i++) {
             integers.add(i + 1);
         }
 
