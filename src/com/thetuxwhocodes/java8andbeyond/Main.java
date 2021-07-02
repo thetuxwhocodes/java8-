@@ -1,4 +1,4 @@
-package com.thetuxwhocodes.java8;
+package com.thetuxwhocodes.java8andbeyond;
 
 public class Main {
 	

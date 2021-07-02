@@ -1,4 +1,4 @@
-package com.thetuxwhocodes.java8.lambda;
+package com.thetuxwhocodes.java8andbeyond.lambda;
 
 import java.util.ArrayList;
 import java.util.List;

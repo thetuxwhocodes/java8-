@@ -1,4 +1,4 @@
-package com.girish.simple.stream;
+package com.thetuxwhocodes.java8andbeyond.stream;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ public class StreamStuff {
 		System.out.println(map);
 
 		Map<Integer, Item> filteredMap = items.stream()
-												.filter(item -> item.isIndicator())
+												.filter(Item::isIndicator)
 												.collect(Collectors.toMap(Item::getId, item -> item));
 		System.out.println(filteredMap);
 	}

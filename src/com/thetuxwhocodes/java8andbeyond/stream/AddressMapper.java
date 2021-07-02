@@ -1,4 +1,4 @@
-package com.girish.simple.stream;                                                                                                                                         
+package com.thetuxwhocodes.java8andbeyond.stream;
                                                                                                                                                                           
 import java.util.ArrayList;                                                                                                                                               
 import java.util.List;                                                                                                                                                    
@@ -17,11 +17,11 @@ public class AddressMapper {
 		Map<AddressType, Address> map = addresses.stream().collect(Collectors.toMap(Address::getAddressType, address -> address));                                        
 		System.out.println(map);                                                                                                                                          
                                                                                                                                                                           
-		Map<AddressType, Address> filteredMap = addresses.stream().filter(address -> address.isMailingAddress())                                                          
+		Map<AddressType, Address> filteredMap = addresses.stream().filter(Address::isMailingAddress)
 				.collect(Collectors.toMap(Address::getAddressType, address -> address));                                                                                  
 		System.out.println(filteredMap);                                                                                                                                  
 		                                                                                                                                                                  
-		long countOfMailingAddresses= addresses.stream().filter(address -> address.isMailingAddress()).count();                                                           
+		long countOfMailingAddresses= addresses.stream().filter(Address::isMailingAddress).count();
 		System.out.println("countOfMailingAddresses = " + countOfMailingAddresses);                                                                                       
 	}                                                                                                                                                                     
                                                                                                                                                                           
